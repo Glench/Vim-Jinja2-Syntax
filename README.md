@@ -6,6 +6,7 @@ There are two reasons I made this repository:
 
 * I wanted to manage this syntax file with vim-addons-manager or whatever other vim plugins managers there are.
 
-This repository may not have the exact latest version of the jinja2 syntax file. If you notice it is out-of-date please message me.
+The current version is the [2011-5-13 version](https://github.com/mitsuhiko/jinja2/commit/ef30ab56abc955593879f1348c4097cf956177b7) from the official jinja repository. 
+If you notice there is a newer version available please message me.
 
 **If you have bugs or pull requests, please submit them straight to the [source](https://github.com/mitsuhiko/jinja2).**
