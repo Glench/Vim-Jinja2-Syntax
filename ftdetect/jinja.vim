@@ -1,7 +1,7 @@
 " Figure out which type of hilighting to use for html.
 fun! s:SelectHTML()
 let n = 1
-while n < 50 && n < line("$")
+while n < 50 && n <= line("$")
   " check for jinja
   if getline(n) =~ '{%\s*\(extends\|block\|macro\|set\|if\|for\|include\|trans\)\>'
     set ft=jinja
