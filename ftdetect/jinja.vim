@@ -3,7 +3,7 @@ fun! s:SelectHTML()
 let n = 1
 while n < 50 && n <= line("$")
   " check for jinja
-  if getline(n) =~ '{%\s*\(end.*\|extends\|block\|macro\|set\|if\|for\|include\|trans\)\>'
+  if getline(n) =~ '{{.*}}\|{%\s*\(end.*\|extends\|block\|macro\|set\|if\|for\|include\|trans\)\>'
     set ft=jinja
     return
   endif
