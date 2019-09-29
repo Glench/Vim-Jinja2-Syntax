@@ -11,4 +11,4 @@ fun! s:SelectHTML()
   endwhile
 endfun
 autocmd BufNewFile,BufRead *.html,*.htm,*.nunjucks,*.nunjs,*.njk  call s:SelectHTML()
-autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja set ft=jinja
+autocmd BufNewFile,BufRead *.jinja2,*.j2,*.jinja *.tera set ft=jinja
