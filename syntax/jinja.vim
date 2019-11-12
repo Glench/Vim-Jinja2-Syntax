@@ -34,6 +34,10 @@ if g:jinja_syntax_html
     so <sfile>:p:h/html.vim
   else
     let ext = expand('%:e')
+    " If file is named like whatever.BASE.j2 try to load BASE syntax
+    if ext == 'j2'
+        let ext = expand('%:r:e')
+    endif
     if ext !~ 'htm\|nunj|jinja\|j2' &&
           \ findfile(ext . '.vim', $VIMRUNTIME . '/syntax') != ''
       execute 'runtime! syntax/' . ext . '.vim'
