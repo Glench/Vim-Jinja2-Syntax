@@ -7,7 +7,7 @@ endif
 " TODO: useful?
 " runtime! ftplugin/html.vim ftplugin/html_*.vim ftplugin/html/*.vim
 
-setlocal comments=s:{#,ex:#} commentstring={##\ %s
+setlocal comments=s:{#,ex:#} commentstring={#%s#}
 setlocal formatoptions+=tcqln
 
 if exists('b:undo_ftplugin')
